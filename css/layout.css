@@ -158,15 +158,12 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: white; /* Text color */
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    text-shadow: 
-        -1px -1px 0 #000, /* Top-left */
-         1px -1px 0 #000, /* Top-right */
-        -1px  1px 0 #000, /* Bottom-left */
-         1px  1px 0 #000; /* Bottom-right */
+    -webkit-text-stroke: 1px black; /* Black outline */
+    text-stroke: 1px black; /* Fallback for browsers supporting `text-stroke` */
     opacity: 0; /* Hidden by default */
     transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
 }
