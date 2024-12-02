@@ -149,6 +149,31 @@ h4 {
   text-decoration: none;
 }
 
+.work-overlay {
+    position: relative;
+}
+
+.work-hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+.work-overlay:hover .work-hover-text {
+    opacity: 1; /* Show text on hover */
+}
+
+.work-overlay:hover img {
+    filter: grayscale(100%); /* Ensure the grey overlay effect is applied */
+}
+
 
 /*------------------------------------------------------------------
   	[Button]
