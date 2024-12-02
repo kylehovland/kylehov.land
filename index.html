@@ -132,7 +132,7 @@
             <div class="col-sm-8 col-sm-offset-1">
                <div class="row row-space-2 margin-b-4">
                   <div class="col-md-4 md-margin-b-4">
-                     <div class="service" data-height="height">
+                     <div class="service" data-height="height" onclick="toggleInfo('info1')">
                         <div class="service-element">
                            <i class="service-icon icon-chemistry"></i>
                         </div>
@@ -141,9 +141,13 @@
                            <p class="margin-b-5">Building dynamic, responsive, and secure web applications</p>
                         </div>
                      </div>
+                     <!-- More Info Section (Initially Hidden) -->
+                     <div id="info1" class="more-info" style="display: none;">
+                        <p>Details about Full-Stack Web Development: In this role, I worked with various web technologies such as HTML, CSS, JavaScript, and backend frameworks to create full-fledged web applications, focusing on performance and scalability.</p>
+                     </div>
                   </div>
                   <div class="col-md-4 md-margin-b-4">
-                     <div class="service bg-color-base wow zoomIn" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
+                     <div class="service bg-color-base wow zoomIn" data-height="height" data-wow-duration=".3" data-wow-delay=".1s" onclick="toggleInfo('info2')">
                         <div class="service-element">
                            <i class="service-icon color-white icon-screen-tablet"></i>
                         </div>
@@ -152,9 +156,13 @@
                            <p class="color-white margin-b-5">Crafting scalable and efficient data solutions.</p>
                         </div>
                      </div>
+                     <!-- More Info Section (Initially Hidden) -->
+                     <div id="info2" class="more-info" style="display: none;">
+                        <p>Details about Database Design and Management: I have designed and optimized databases, ensuring data integrity, security, and performance for various applications. My experience includes working with SQL and NoSQL databases.</p>
+                     </div>
                   </div>
                   <div class="col-md-4">
-                     <div class="service" data-height="height">
+                     <div class="service" data-height="height" onclick="toggleInfo('info3')">
                         <div class="service-element">
                            <i class="service-icon icon-badge"></i>
                         </div>
@@ -162,6 +170,10 @@
                            <h3>AI and Machine Learning Applications</h3>
                            <p class="margin-b-5">Leveraging intelligent systems for data-driven insights.</p>
                         </div>
+                     </div>
+                     <!-- More Info Section (Initially Hidden) -->
+                     <div id="info3" class="more-info" style="display: none;">
+                        <p>Details about AI and Machine Learning Applications: I have applied AI and machine learning techniques to solve real-world problems, including data classification, regression, and clustering using Python and machine learning frameworks such as TensorFlow and Scikit-learn.</p>
                      </div>
                   </div>
                </div>
@@ -173,6 +185,18 @@
    </div>
 </div>
 <!-- End Experience -->
+
+<script>
+   function toggleInfo(id) {
+      var infoSection = document.getElementById(id);
+      if (infoSection.style.display === "none") {
+         infoSection.style.display = "block";
+      } else {
+         infoSection.style.display = "none";
+      }
+   }
+</script>
+
 
 
 
