@@ -159,7 +159,7 @@ h4 {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; /* Text color */
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     -webkit-text-stroke: 1px black; /* Black outline */
